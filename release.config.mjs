@@ -9,38 +9,30 @@ export default {
 			{
 				releaseRules: {
 					// Major version bumps
-					// "💥": "major", // :boom: Breaking changes
-					// "🧨": "major", // :firecracker: Breaking changes
-					major: ["💥", "🧨"],
+					major: [
+						":boom:", // "💥": Breaking changes
+						":firecracker:", // "🧨": Breaking changes
+					],
 					// Minor version bumps
-					// "✨": "minor", // :sparkles: New feature
-					// "🎉": "minor", // :tada: New feature
-					// "🚀": "minor", // :rocket: Performance improvements
-					// "♿": "minor", // :wheelchair: Accessibility
-					// "🏗️": "minor", // :building_construction: Architecture changes
-					minor: ["✨", "🎉", "🚀", "♿", "🏗️"],
+					minor: [
+						":sparkles:", // "✨": New feature
+						":tada:", // "🎉": New feature
+						":rocket:", // "🚀": Performance improvements
+						":wheelchair:", // "♿": Accessibility
+						":building_construction:", // "🏗️": Architecture changes
+					],
 					// Patch version bumps
-					// "🐛": "patch", // :bug: Bug fix
-					// "🩹": "patch", // :adhesive_bandage: Simple fix
-					// "🔒": "patch", // :lock: Security
-					// "⚡": "patch", // :zap: Performance
-					// "♻️": "patch", // :recycle: Refactor
-					// "🔧": "patch", // :wrench: Configuration
-					// "⬆️": "patch", // :arrow_up: Dependencies
-					// "📝": "patch", // :memo: Documentation
-					// "🚑": "patch", // :ambulance: Critical hotfix
-					// "🔍": "patch", // :magnifying_glass: SEO improvements
 					patch: [
-						":bug:",
-						":adhesive_bandage:",
-						":lock:",
-						":zap:",
-						":recycle:",
-						":wrench:",
-						":arrow_up:",
-						":memo:",
-						":ambulance:",
-						":magnifying_glass:",
+						":bug:", // "🐛": Bug fix
+						":adhesive_bandage:", // "🩹": Simple fix
+						":lock:", // "🔒": Security
+						":zap:", // "⚡": Performance
+						":recycle:", // "♻️": Refactor
+						":wrench:", // "🔧": Configuration
+						":arrow_up:", // "⬆️": Dependencies
+						":memo:", // "📝": Documentation
+						":ambulance:", // "🚑": Critical hotfix
+						":magnifying_glass:", // "🔍": SEO improvements
 					],
 				},
 				// Ensure `cz-git` and `semantic-release-gitmoji` work correctly together
