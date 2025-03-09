@@ -9,25 +9,39 @@ export default {
 			{
 				releaseRules: {
 					// Major version bumps
-					"💥": "major", // :boom: Breaking changes
-					"🧨": "major", // :firecracker: Breaking changes
+					// "💥": "major", // :boom: Breaking changes
+					// "🧨": "major", // :firecracker: Breaking changes
+					major: ["💥", "🧨"],
 					// Minor version bumps
-					"✨": "minor", // :sparkles: New feature
-					"🎉": "minor", // :tada: New feature
-					"🚀": "minor", // :rocket: Performance improvements
-					"♿": "minor", // :wheelchair: Accessibility
-					"🏗️": "minor", // :building_construction: Architecture changes
+					// "✨": "minor", // :sparkles: New feature
+					// "🎉": "minor", // :tada: New feature
+					// "🚀": "minor", // :rocket: Performance improvements
+					// "♿": "minor", // :wheelchair: Accessibility
+					// "🏗️": "minor", // :building_construction: Architecture changes
+					minor: ["✨", "🎉", "🚀", "♿", "🏗️"],
 					// Patch version bumps
-					"🐛": "patch", // :bug: Bug fix
-					"🩹": "patch", // :adhesive_bandage: Simple fix
-					"🔒": "patch", // :lock: Security
-					"⚡": "patch", // :zap: Performance
-					"♻️": "patch", // :recycle: Refactor
-					"🔧": "patch", // :wrench: Configuration
-					"⬆️": "patch", // :arrow_up: Dependencies
-					"📝": "patch", // :memo: Documentation
-					"🚑": "patch", // :ambulance: Critical hotfix
-					"🔍": "patch", // :magnifying_glass: SEO improvements
+					// "🐛": "patch", // :bug: Bug fix
+					// "🩹": "patch", // :adhesive_bandage: Simple fix
+					// "🔒": "patch", // :lock: Security
+					// "⚡": "patch", // :zap: Performance
+					// "♻️": "patch", // :recycle: Refactor
+					// "🔧": "patch", // :wrench: Configuration
+					// "⬆️": "patch", // :arrow_up: Dependencies
+					// "📝": "patch", // :memo: Documentation
+					// "🚑": "patch", // :ambulance: Critical hotfix
+					// "🔍": "patch", // :magnifying_glass: SEO improvements
+					path: [
+						":bug:",
+						":adhesive_bandage:",
+						":lock:",
+						":zap:",
+						":recycle:",
+						":wrench:",
+						":arrow_up:",
+						":memo:",
+						":ambulance:",
+						":magnifying_glass:",
+					],
 				},
 				// Ensure `cz-git` and `semantic-release-gitmoji` work correctly together
 				parserOpts: {
