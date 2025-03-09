@@ -1,0 +1,45 @@
+{
+	"reactSnippets.settings.prettierEnabled": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.tsdk": "node_modules/typescript/lib",
+
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"tsconfig.json": "tsconfig.*.json, env.d.ts, *.d.ts, tsr.*.json",
+		"vitest.config.mts": "jsconfig*, cypress.config.*, playwright.config.*, vitest.setup.*, vite.plugin.*",
+		"package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, biome*, eslint*, .prettier*, prettier*, .editorconfig, commitlint*, .stylelintrc.*, .npmrc, .nvmrc, release.config.*"
+	},
+
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.formatDocument": "always",
+		"source.organizeImports.biome": "explicit",
+		"source.fixAll.biome": "explicit"
+	},
+
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+
+	"files.insertFinalNewline": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true
+	},
+
+	"cSpell.words": [],
+
+	"git.ignoreLimitWarning": true
+}

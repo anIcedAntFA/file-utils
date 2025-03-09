@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "yoavbls.pretty-ts-errors",
+    "usernamehw.errorlens",
+    "biomejs.biome"
+  ]
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+*.log
+.idea/
+tmp/
+*.tgz
+bun.lock
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
