@@ -30,7 +30,7 @@ export default {
 					// "📝": "patch", // :memo: Documentation
 					// "🚑": "patch", // :ambulance: Critical hotfix
 					// "🔍": "patch", // :magnifying_glass: SEO improvements
-					path: [
+					patch: [
 						":bug:",
 						":adhesive_bandage:",
 						":lock:",
