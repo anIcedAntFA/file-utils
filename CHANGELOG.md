@@ -1,5 +1,10 @@
 # Changelog
 
+# [v1.0.2](https://github.com/anIcedAntFA/file-utils/compare/v1.0.1...v1.0.2) (2025-03-09)
+
+## 🔧 Changing configuration files
+- [`46f9a46`](https://github.com/anIcedAntFA/file-utils/commit/46f9a46)  configs(release): update semantic release
+
 # [v1.0.1](https://github.com/anIcedAntFA/file-utils/compare/v1.0.0...v1.0.1) (2025-03-09)
 
 ## 🚑 Critical Hotfixes
