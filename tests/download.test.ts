@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { downloadFile } from "../src/download";
+import { downloadFile } from "../src/download-file";
 
 describe("downloadFile", () => {
 	// Setup mocks for browser-specific APIs
