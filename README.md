@@ -117,7 +117,7 @@ This project uses [Conventional Commits](https://www.conventionalcommits.org/) f
 - `refactor`: Code changes that neither fix bugs nor add features
 - `perf`: Performance improvements
 - `test`: Adding or updating tests
-- `chore`: Changes to the build process or auxiliary tools
+- `chore`: Changes to the build process or auxiliary tools.
 
 To make a commit, run:
 
