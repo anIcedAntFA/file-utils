@@ -1,6 +1,6 @@
 import { readFile } from "node:fs";
 import { promisify } from "node:util";
-import { formatTimezone } from "dateformat";
+import dateFormat from "dateformat";
 
 const readFileAsync = promisify(readFile);
 
