@@ -2,6 +2,47 @@
 
 A lightweight TypeScript library for handling file operations in the browser.
 
+## File and Blob Types in JavaScript/TypeScript
+
+The File and Blob types are core JavaScript APIs for handling binary data, especially useful for file operations in web applications.
+
+### Blob
+
+A Blob (Binary Large Object) represents immutable raw binary data. It's like a file-like object of raw data that can be read as text or binary data.
+
+```ts
+// Creating a Blob
+const textBlob = new Blob(["Hello World"], { type: "text/plain" });
+const jsonBlob = new Blob([JSON.stringify({ name: "John" })], { type: "application/json" });
+
+// Getting size and type
+console.log(textBlob.size); // Size in bytes
+console.log(textBlob.type); // MIME type: "text/plain"
+
+// Creating a URL from a Blob (useful for downloads)
+const blobUrl = URL.createObjectURL(textBlob);
+// When done: URL.revokeObjectURL(blobUrl);
+```
+
+### File
+
+File extends Blob and represents an actual file from the user's filesystem. It adds properties like name, lastModified, and webkitRelativePath.
+
+```ts
+// Typically obtained from file input or drag & drop
+const fileInput = document.querySelector<HTMLInputElement>('input[type="file"]');
+fileInput?.addEventListener("change", (event) => {
+  const files = fileInput.files;
+  if (files && files.length > 0) {
+    const file = files[0];
+    console.log(file.name); // Filename with extension
+    console.log(file.size); // Size in bytes
+    console.log(file.type); // MIME type
+    console.log(file.lastModified); // Timestamp
+  }
+});
+```
+
 ## Installation
 
 ```bash
