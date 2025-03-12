@@ -32,6 +32,11 @@ export default {
 					minor: [
 						":sparkles:", // "✨": New feature
 					],
+					// Pre-minor version bumps
+					preminor: [
+						":seedling:", // "🌱" Add minor experimental features.
+						":building_construction:", // "🏗️" Introduce minor architecture improvements.
+					],
 					// Patch version bumps
 					patch: [
 						":zap:", // "⚡️" Improve performance.
@@ -101,8 +106,9 @@ export default {
 				releaseNotes: {
 					template,
 					helpers: {
-						datetime: (format = "UTC:yyyy-mm-dd") =>
-							dateFormat(new Date(), format),
+						datetime: (format = "UTC:yyyy-mm-dd") => {
+							return dateFormat(new Date(), format);
+						},
 					},
 					// issueResolution: {
 					//   template: '{baseUrl}/{owner}/{repo}/issues/{ref}',
