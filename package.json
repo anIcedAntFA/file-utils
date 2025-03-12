@@ -31,7 +31,8 @@
 		"docs": "typedoc --out docs src",
 		"prepare": "husky",
 		"commit": "git-cz",
-		"release": "semantic-release"
+		"release": "semantic-release",
+		"release:test": "semantic-release --dry-run"
 	},
 	"keywords": ["file", "download", "browser", "utils"],
 	"author": {

@@ -120,12 +120,7 @@ describe("downloadFile", () => {
 		// Create a mock AbortSignal
 		const mockSignal = {} as AbortSignal;
 
-		await downloadFile(
-			"https://example.com/file.pdf",
-			"example.pdf",
-			true,
-			mockSignal,
-		);
+		await downloadFile("https://example.com/file.pdf", "example.pdf", {});
 
 		expect(fetch).toHaveBeenCalledWith("https://example.com/file.pdf", {
 			signal: mockSignal,

@@ -57,7 +57,7 @@ export default {
 						":children_crossing:", // "🚸": Improve user experience / usability.
 						":iphone:", // "📱": Work on responsive design.
 						":egg:", // "🥚": Add or update an easter egg.
-						":alembic:", // "🧪": Perform experiments.
+						":test_tube:", // "🧪": Perform experiments.
 						":mag:", // "🔍": Improve SEO.
 						":label:", // "🏷️": Add or update types.
 						":triangular_flag_on_post:", // "🚩": Add, update, or remove feature flags.
