@@ -1,6 +1,6 @@
 {
 	"name": "@ngockhoi96/file-utils",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "Utility library for file operations in the browser",
 	"type": "module",
 	"main": "dist/index.js",
