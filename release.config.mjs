@@ -30,10 +30,7 @@ export default {
 					// Minor version bumps
 					minor: [
 						":sparkles:", // "✨": New feature
-					],
-					// Pre-minor version bumps
-					preminor: [
-						":building_construction:", // "🏗️" Introduce minor architecture improvements.
+						":building_construction:", // "🏗️": Architectural changes.
 					],
 					// Patch version bumps
 					patch: [
@@ -75,7 +72,7 @@ export default {
 						":recycle:", // "♻️" Refactor code without changing behavior.
 						":twisted_rightwards_arrows:", // "🔀" Merge branches.
 						":fire:", // "🔥" Remove code or files.
-						// ":construction:", // "🚧" Work in progress.
+						":construction:", // "🚧" Work in progress.
 						":rotating_light:", // "🚨" Fix compiler/linter warnings.
 						":construction_worker:", // "👷" Add or update CI/CD pipeline.
 						":money_with_wings:", // "💸" Handle financial transactions or payments.
@@ -94,10 +91,6 @@ export default {
 						":seedling:", // "🌱" Add or update seed data files.
 						":alembic:", // "⚗️" Experiment with new ideas.
 						":airplane:", // "✈️" Improve offline support.
-					],
-					// Prerelease version bumps
-					prerelease: [
-						":construction:", // "🚧" Work in progress for next release.
 					],
 				},
 				// Ensure `cz-git` and `semantic-release-gitmoji` work correctly together
