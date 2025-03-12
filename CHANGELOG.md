@@ -1,5 +1,11 @@
 # Changelog
 
+# [v1.1.5](https://github.com/anIcedAntFA/file-utils/compare/v1.1.4...v1.1.5) (2025-03-12)
+
+## 🔧 Changing configuration files
+- [`210eea7`](https://github.com/anIcedAntFA/file-utils/commit/210eea7)  configs(release): update release config 
+- [`315712e`](https://github.com/anIcedAntFA/file-utils/commit/315712e)  configs(release): update release config
+
 # [v1.1.4](https://github.com/anIcedAntFA/file-utils/compare/v1.1.3...v1.1.4) (2025-03-12)
 
 ## ✅ Adding tests
