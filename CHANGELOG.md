@@ -1,5 +1,10 @@
 # Changelog
 
+# [v2.0.0](https://github.com/anIcedAntFA/file-utils/compare/v1.1.5...v2.0.0) (2025-03-12)
+
+## 🏗️ Making architectural changes
+- [`f7a3431`](https://github.com/anIcedAntFA/file-utils/commit/f7a3431)  architecture: update architecture test pre-minor release
+
 # [v1.1.5](https://github.com/anIcedAntFA/file-utils/compare/v1.1.4...v1.1.5) (2025-03-12)
 
 ## 🔧 Changing configuration files
