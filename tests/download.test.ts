@@ -62,7 +62,7 @@ describe("downloadFile", () => {
 	});
 
 	it("should use fetch when forceDownload is true", async () => {
-		await downloadFile("https://example.com/file.pdf", "example.pdf", true);
+		await downloadFile("https://example.com/file.pdf", "example.pdf", {});
 
 		expect(fetch).toHaveBeenCalledWith("https://example.com/file.pdf", {
 			signal: undefined,
