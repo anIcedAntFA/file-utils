@@ -1,10 +1,10 @@
 import { defineConfig } from "cz-git";
 
 export default defineConfig({
-	extends: ["@commitlint/config-conventional"],
+	extends: ["gitmoji"],
 	rules: {
 		"header-case": [2, "always", "lower-case"],
-		"scope-enum": [2, "always", ["test", "site", "cli"]],
+		// "scope-enum": [2, "always", ["test", "site", "cli"]],
 		"subject-min-length": [2, "always", 2],
 		"subject-empty": [2, "never"],
 	},
@@ -14,9 +14,6 @@ export default defineConfig({
 			c: "chore: update config files",
 			f: "docs: fix typos",
 			":": "docs: update README",
-			schema: "chore: update czrc configure JSON schema",
-			"table:data": "chore: :hammer: update project using table data",
-			"table:docs": "docs: update project using table",
 		},
 		themeColorCode: "38;5;043",
 		aiDiffIgnore: ["pnpm-lock.yaml", "docs/public"],
@@ -168,6 +165,6 @@ export default defineConfig({
 			},
 		],
 		useEmoji: true,
-		emojiAlign: "center",
+		emojiAlign: "left",
 	},
 });
