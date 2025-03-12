@@ -1,5 +1,6 @@
 import { readFile } from "node:fs";
 import { promisify } from "node:util";
+import { formatTimezone } from "dateformat";
 
 const readFileAsync = promisify(readFile);
 
@@ -99,6 +100,17 @@ export default {
 				},
 				releaseNotes: {
 					template,
+					helpers: {
+						datetime: (format = "UTC:yyyy-mm-dd") =>
+							dateFormat(new Date(), format),
+					},
+					// issueResolution: {
+					//   template: '{baseUrl}/{owner}/{repo}/issues/{ref}',
+					//   baseUrl: 'https://github.com',
+					//   source: 'github.com',
+					//   removeFromCommit: false,
+					//   regex: /#\d+/g
+					// }
 				},
 			},
 		],
