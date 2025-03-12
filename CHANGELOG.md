@@ -1,5 +1,10 @@
 # Changelog
 
+# [v1.1.3](https://github.com/anIcedAntFA/file-utils/compare/v1.1.2...v1.1.3) (2025-03-12)
+
+## 🔧 Changing configuration files
+- [`c402b7a`](https://github.com/anIcedAntFA/file-utils/commit/c402b7a)  configs: update config
+
 # [v1.1.2](https://github.com/anIcedAntFA/file-utils/compare/v1.1.1...v1.1.2) (2025-03-12)
 
 ## ✅ Adding tests
