@@ -8,11 +8,10 @@ const template = readFileAsync("./default-template.hbs");
 let choreMessage = "";
 if (process.env.GITHUB_ACTIONS) {
 	// CI IS SET
-	choreMessage = ":construction_worker: chore(release): ${nextRelease.version}";
+	choreMessage = ":hammer: chore(release): ${nextRelease.version}";
 } else {
 	// CI IS NOT SET
-	choreMessage =
-		":construction_worker: chore(release): ${nextRelease.version} [skip ci]";
+	choreMessage = ":hammer: chore(release): ${nextRelease.version} [skip ci]";
 }
 
 export default {
@@ -100,7 +99,7 @@ export default {
 			{
 				assets: ["package.json", "CHANGELOG.md"],
 				message:
-					":construction_worker: chore(release): v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+					":hammer: chore(release): v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
 			},
 		],
 		[

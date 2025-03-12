@@ -11,6 +11,7 @@ export default defineConfig({
 	treeshake: true,
 	shims: true,
 	target: "es2020",
+	outDir: "dist",
 	outExtension({ format }) {
 		return {
 			js: format === "cjs" ? ".js" : ".mjs",
