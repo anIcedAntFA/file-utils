@@ -1,5 +1,14 @@
 # Changelog
 
+# [v1.1.2](https://github.com/anIcedAntFA/file-utils/compare/v1.1.1...v1.1.2) (2025-03-12)
+
+## ✅ Adding tests
+- [`1632358`](https://github.com/anIcedAntFA/file-utils/commit/1632358)  test(test): update test 
+- [`eee3f1b`](https://github.com/anIcedAntFA/file-utils/commit/eee3f1b)  test(test): update test 
+
+## 🔧 Changing configuration files
+- [`c62e41b`](https://github.com/anIcedAntFA/file-utils/commit/c62e41b)  configs(config): update release semantic config
+
 # [v1.1.1](https://github.com/anIcedAntFA/file-utils/compare/v1.1.0...v1.1.1) (2025-03-12)
 
 ## 🐛 Fixing a bug

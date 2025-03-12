@@ -6,7 +6,11 @@
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
-	"files": ["dist", "README.md", "LICENSE"],
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
 	"publishConfig": {
 		"access": "public",
 		"provenance": true
@@ -34,7 +38,12 @@
 		"release": "semantic-release",
 		"release:test": "semantic-release --dry-run"
 	},
-	"keywords": ["file", "download", "browser", "utils"],
+	"keywords": [
+		"file",
+		"download",
+		"browser",
+		"utils"
+	],
 	"author": {
 		"email": "ngockhoi96.dev@gmail.com",
 		"name": "ngockhoi96",
@@ -95,6 +104,9 @@
 		"errorMsg": "Brand name is invalid, please rename your current branch"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"esbuild"
+		]
 	}
 }
