@@ -1,35 +1,25 @@
-/** @type {import('cz-git').UserConfig} */
-const config = {
+import { defineConfig } from "cz-git";
+
+export default defineConfig({
 	extends: ["@commitlint/config-conventional"],
 	rules: {
-		// @see: https://commitlint.js.org/#/reference-rules
-		// Enforce commit header to start with a gitmoji (colon + word + colon)
-		"header-pattern": [2, "always", /^(:\w+:)\s.+$/],
-	},
-	parserPreset: {
-		parserOpts: {
-			headerPattern: /^(:\w+:)\s(.*)$/,
-			headerCorrespondence: ["gitmoji", "subject"],
-		},
+		"header-case": [2, "always", "lower-case"],
+		"scope-enum": [2, "always", ["test", "site", "cli"]],
+		"subject-min-length": [2, "always", 2],
+		"subject-empty": [2, "never"],
 	},
 	prompt: {
-		alias: { fd: "docs: fix typos" },
-		messages: {
-			type: "Select the type of change that you're committing:",
-			scope: "Denote the SCOPE of this change (optional):",
-			customScope: "Denote the SCOPE of this change:",
-			subject: "Write a SHORT, IMPERATIVE tense description of the change:\n",
-			body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
-			breaking:
-				'List any BREAKING CHANGES (optional). Use "|" to break new line:\n',
-			footerPrefixesSelect:
-				"Select the ISSUES type of changeList by this change (optional):",
-			customFooterPrefix: "Input ISSUES prefix:",
-			footer: "List any ISSUES by this change. E.g.: #31, #34:\n",
-			generatingByAI: "Generating your AI commit subject...",
-			generatedSelectByAI: "Select suitable subject by AI generated:",
-			confirmCommit: "Are you sure you want to proceed with the commit above?",
+		alias: {
+			b: "chore: bump dependencies",
+			c: "chore: update config files",
+			f: "docs: fix typos",
+			":": "docs: update README",
+			schema: "chore: update czrc configure JSON schema",
+			"table:data": "chore: :hammer: update project using table data",
+			"table:docs": "docs: update project using table",
 		},
+		themeColorCode: "38;5;043",
+		aiDiffIgnore: ["pnpm-lock.yaml", "docs/public"],
 		types: [
 			{
 				value: "init",
@@ -178,37 +168,6 @@ const config = {
 			},
 		],
 		useEmoji: true,
-		emojiAlign: "left",
-		useAI: false,
-		aiNumber: 1,
-		themeColorCode: "",
-		scopes: [],
-		allowCustomScopes: false,
-		allowEmptyScopes: false,
-		customScopesAlign: "bottom",
-		customScopesAlias: "custom",
-		emptyScopesAlias: "empty",
-		upperCaseSubject: false,
-		markBreakingChangeMode: false,
-		allowBreakingChanges: ["feat", "fix"],
-		breaklineNumber: 100,
-		breaklineChar: "|",
-		skipQuestions: [],
-		issuePrefixes: [
-			{ value: "closed", name: "closed:   ISSUES has been processed" },
-		],
-		customIssuePrefixAlign: "top",
-		emptyIssuePrefixAlias: "skip",
-		customIssuePrefixAlias: "custom",
-		allowCustomIssuePrefix: true,
-		allowEmptyIssuePrefix: true,
-		confirmColorize: true,
-		scopeOverrides: undefined,
-		defaultBody: "",
-		defaultIssues: "",
-		defaultScope: "",
-		defaultSubject: "",
+		emojiAlign: "center",
 	},
-};
-
-export default config;
+});
