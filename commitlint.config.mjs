@@ -39,6 +39,7 @@ export default defineConfig({
 		"type-empty": [2, "never"],
 		"type-case": [2, "always", "lower-case"],
 		"type-enum": [2, "always", types],
+		"scope-case": [2, "never"],
 		"subject-min-length": [2, "always", 2],
 		"subject-empty": [2, "never"],
 	},

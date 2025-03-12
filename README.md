@@ -58,15 +58,15 @@ bun add @ngockhoi96/file-utils
 ## Usage
 
 ```typescript
-import { downloadFile, isValidUrl } from "@ngockhoi96/file-utils";
+import { downloadRemoteFile, isValidUrl } from "@ngockhoi96/file-utils";
 
 // Download a file from a URL
-downloadFile("https://example.com/document.pdf", "my-document.pdf")
+downloadRemoteFile("https://example.com/document.pdf", "my-document.pdf")
   .then(() => console.log("Download initiated"))
   .catch((err) => console.error("Download failed", err));
 
 // Force download (fetches file content first)
-downloadFile("https://example.com/document.pdf", "my-document.pdf", true)
+downloadRemoteFile("https://example.com/document.pdf", "my-document.pdf", true)
   .then(() => console.log("Download initiated"))
   .catch((err) => console.error("Download failed", err));
 ```
