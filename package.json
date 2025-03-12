@@ -1,6 +1,6 @@
 {
 	"name": "@ngockhoi96/file-utils",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Utility library for file operations in the browser",
 	"type": "module",
 	"main": "dist/index.js",
@@ -60,6 +60,8 @@
 	"homepage": "https://github.com/anIcedAntFA/file-utils#readme",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/commit-analyzer": "^13.0.1",
 		"@semantic-release/git": "^10.0.1",

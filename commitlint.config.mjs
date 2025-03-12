@@ -1,7 +1,16 @@
 /** @type {import('cz-git').UserConfig} */
 const config = {
+	extends: ["@commitlint/config-conventional"],
 	rules: {
 		// @see: https://commitlint.js.org/#/reference-rules
+		// Enforce commit header to start with a gitmoji (colon + word + colon)
+		"header-pattern": [2, "always", /^(:\w+:)\s.+$/],
+	},
+	parserPreset: {
+		parserOpts: {
+			headerPattern: /^(:\w+:)\s(.*)$/,
+			headerCorrespondence: ["gitmoji", "subject"],
+		},
 	},
 	prompt: {
 		alias: { fd: "docs: fix typos" },
