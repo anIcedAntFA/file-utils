@@ -80,7 +80,7 @@ describe("downloadFile", () => {
 		});
 
 		await expect(
-			downloadFile("https://example.com/file.pdf", "example.pdf", true),
+			downloadFile("https://example.com/file.pdf", "example.pdf", {}),
 		).rejects.toThrow(
 			"Error downloading file: Failed to fetch file: 404 Not Found.",
 		);
@@ -89,12 +89,12 @@ describe("downloadFile", () => {
 	it("should handle fetch blob error", async () => {
 		// Mock a fetch response with a blob method that throws an error
 		window.fetch = vi.fn().mockResolvedValue({
-			ok: true,
+			ok: {},
 			blob: vi.fn().mockRejectedValue(new Error("Failed to create blob")),
 		});
 
 		await expect(
-			downloadFile("https://example.com/file.pdf", "example.pdf", true),
+			downloadFile("https://example.com/file.pdf", "example.pdf", {}),
 		).rejects.toThrow("Error downloading file: Failed to create blob.");
 	});
 
@@ -103,7 +103,7 @@ describe("downloadFile", () => {
 		window.fetch = vi.fn().mockRejectedValue(new Error("Network error"));
 
 		await expect(
-			downloadFile("https://example.com/file.pdf", "example.pdf", true),
+			downloadFile("https://example.com/file.pdf", "example.pdf", {}),
 		).rejects.toThrow("Error downloading file: Network error.");
 	});
 
@@ -112,7 +112,7 @@ describe("downloadFile", () => {
 		window.fetch = vi.fn().mockRejectedValue("Some unknown error");
 
 		await expect(
-			downloadFile("https://example.com/file.pdf", "example.pdf", true),
+			downloadFile("https://example.com/file.pdf", "example.pdf", {}),
 		).rejects.toThrow("Error downloading file: An unknown error.");
 	});
 
