@@ -1,5 +1,16 @@
 # Changelog
 
+# [v1.1.1](https://github.com/anIcedAntFA/file-utils/compare/v1.1.0...v1.1.1) (2025-03-12)
+
+## 🐛 Fixing a bug
+- [`68e37ef`](https://github.com/anIcedAntFA/file-utils/commit/68e37ef)  fix(configs): update config release 
+
+## 🔧 Changing configuration files
+- [`57873f5`](https://github.com/anIcedAntFA/file-utils/commit/57873f5)  configs(config): update configs 
+- [`c6f2e34`](https://github.com/anIcedAntFA/file-utils/commit/c6f2e34)  configs(configs): update config 
+- [`00bf6d1`](https://github.com/anIcedAntFA/file-utils/commit/00bf6d1)  configs(configs): update config 
+- [`9fe58cf`](https://github.com/anIcedAntFA/file-utils/commit/9fe58cf)  configs(configs): update configs release
+
 # [v1.1.0](https://github.com/anIcedAntFA/file-utils/compare/v1.0.2...v1.1.0) (2025-03-12)
 
 ## ✨ Introducing new features
