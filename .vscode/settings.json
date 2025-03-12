@@ -8,7 +8,7 @@
 	"explorer.fileNesting.patterns": {
 		"tsconfig.json": "tsconfig.*.json, env.d.ts, *.d.ts, tsr.*.json",
 		"vitest.config.mts": "jsconfig*, cypress.config.*, playwright.config.*, vitest.setup.*, vite.plugin.*",
-		"package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, biome*, eslint*, .prettier*, prettier*, .editorconfig, commitlint*, .stylelintrc.*, .npmrc, .nvmrc, release.config.*"
+		"package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, biome*, eslint*, .prettier*, prettier*, .editorconfig, commitlint*, cz*, .stylelintrc.*, .npmrc, .nvmrc, release.config.*"
 	},
 
 	"editor.defaultFormatter": "biomejs.biome",
