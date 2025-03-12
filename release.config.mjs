@@ -26,7 +26,6 @@ export default {
 					major: [
 						":boom:", // "💥": Breaking changes
 						":firecracker:", // "🧨": Breaking changes,
-						":building_construction:", // "🏗️": Architectural changes.
 					],
 					// Minor version bumps
 					minor: [
@@ -34,7 +33,6 @@ export default {
 					],
 					// Pre-minor version bumps
 					preminor: [
-						":seedling:", // "🌱" Add minor experimental features.
 						":building_construction:", // "🏗️" Introduce minor architecture improvements.
 					],
 					// Patch version bumps
@@ -77,9 +75,8 @@ export default {
 						":recycle:", // "♻️" Refactor code without changing behavior.
 						":twisted_rightwards_arrows:", // "🔀" Merge branches.
 						":fire:", // "🔥" Remove code or files.
-						":construction:", // "🚧" Work in progress.
+						// ":construction:", // "🚧" Work in progress.
 						":rotating_light:", // "🚨" Fix compiler/linter warnings.
-						":chart_with_upwards_trend:", // "📈" Improve tracking or metrics.
 						":construction_worker:", // "👷" Add or update CI/CD pipeline.
 						":money_with_wings:", // "💸" Handle financial transactions or payments.
 						":technologist:", // "🧑‍💻" Improve developer experience.
@@ -97,6 +94,10 @@ export default {
 						":seedling:", // "🌱" Add or update seed data files.
 						":alembic:", // "⚗️" Experiment with new ideas.
 						":airplane:", // "✈️" Improve offline support.
+					],
+					// Prerelease version bumps
+					prerelease: [
+						":construction:", // "🚧" Work in progress for next release.
 					],
 				},
 				// Ensure `cz-git` and `semantic-release-gitmoji` work correctly together
